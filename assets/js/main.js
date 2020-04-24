@@ -14,7 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
       subject: document.querySelector("#subject").value,
       message: document.querySelector("#message").value,
     };
-    const response = await axios.post(BACKEND_API_URL, data);
+    const response = await axios.post(
+      "https://form-backend-2020-04-24.herokuapp.com/",
+      data
+    );
     console.log(response);
     if (response.status === 200) {
       alert("Message envoyé !");
