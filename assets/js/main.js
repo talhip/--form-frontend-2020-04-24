@@ -1,6 +1,3 @@
-const cors = require("cors");
-app.use(cors());
-
 document.addEventListener("DOMContentLoaded", () => {
   const contactForm = document.querySelector("#contactForm");
   contactForm.addEventListener("submit", async (e) => {
