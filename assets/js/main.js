@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       subject: document.querySelector("#subject").value,
       message: document.querySelector("#message").value,
     };
-    const response = await axios.post(process.env.BACKEND_API_URL, data);
+    const response = await axios.post(BACKEND_API_URL, data);
     console.log(response);
     if (response.status === 200) {
       alert("Message envoyé !");
